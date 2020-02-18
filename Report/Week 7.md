@@ -1,2 +1,2 @@
 The class has resumed finally.
-have been missing our Professor Z.
+Have been missing our Professor Z.
