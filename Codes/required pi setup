@@ -1,0 +1,13 @@
+#we will need to follow the updatation and the setup of pi first
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+#pi will be much easier to setup if you have a USB keyboard and mouse
+#touchscreen display will require drivers
+
+#for on-screen keyboard
+
+sudo apt-get install matchbox-keyboard
+
