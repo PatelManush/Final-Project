@@ -1,15 +1,28 @@
-/*
- * test.h
- *
- *  Created on: Mar. 30, 2020
- *      Author: manush
- */
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+#include "mylogin.h"
 
-#ifndef TEST_H_
-#define TEST_H_
-#define FILE_PATH "/home/manush/Desktop/ExperimentWorkspace/Sound/sound/src/Take_Care.wav"
+#include <QMainWindow>
 
-#define AGE 24
+namespace Ui {
+class MainWindow;
+}
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
+
+private slots:
+    void on_pushButton_clicked();
 
 
-#endif /* TEST_H_ */
+private:
+    Ui::MainWindow *ui;
+    mylogin *MyLogin;
+};
+
+#endif // MAINWINDOW_H
